@@ -5,5 +5,5 @@ def reverse_each_word(collection)
     new_el = word.reverse
     new_new_arr << new_el
   end
-  
+
 end
