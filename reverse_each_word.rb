@@ -1,9 +1,8 @@
-def reverse_each_word(collection)
-  new_arr = collection.split
+def reverse_each_word(string)
+  new_arr = string.split
   new_new_arr = []
-  new_arr.collect do |word|
-    new_el = word.reverse
-    new_new_arr << new_el
+  new_arr.each do |word|
+    new_new_arr << word.reverse
   end
-  new_new_arr[0].join(" ")
+  new_new_arr.join(" ")
 end
